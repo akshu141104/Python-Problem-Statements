@@ -1,3 +1,17 @@
+"""Project: Stock Price Dashboard (Streamlit)
+Problem Statement:
+Build an interactive web dashboard where a user selects a company (from a dropdown) and a date range, and the app shows price trends, volume, and moving averages using charts — all inside the browser, no Flask/Django needed.
+Stack: Python, Pandas, NumPy, Streamlit, Matplotlib
+Input: CSV of stock prices (NIFTY/S&P 500) + user dropdown + date slider
+Output: Line charts for price, bar chart for volume, moving average overlay
+Think about:
+How do you use Streamlit's st.selectbox and st.date_input widgets?
+What is a moving average and how do you calculate it with NumPy/Pandas?
+How do you make the app update charts automatically when user changes input?
+How do you deploy this Streamlit app for others to access?"""
+
+
+
 import streamlit as st
 import yfinance as yf
 import pandas as pd
